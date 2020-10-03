@@ -1,15 +1,12 @@
+empty_list = []
 even = [2, 4, 6, 8]
 odd = [1, 3, 5, 7, 9]
 
-print(min(even))
-print(max(even))
-print(min(odd))
-print(max(odd))
+numbers = [even, odd]
+print(numbers)
 
-print()
-print(len(even))
-print(len(odd))
+for number_list in numbers:  # number_list is bound to even numbers
+    print(number_list)
 
-print()
-
-print("Mississippip".count("s"))
+    for value in number_list:  # value is bound to odd numbers
+        print(value)
